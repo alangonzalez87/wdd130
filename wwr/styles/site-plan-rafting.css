@@ -2,15 +2,14 @@
 :root{
     --primary-color:#05CCDA;
     --secondary-color:#FFFFFF;
-    --third-color:#1E27D1;
     --accent1-color: aquamarine;
     --accent2-color:blue;
     --heading-font: Roboto;
-    --default-font: serif, Roboto;
-    --navigation-background-color:rgba(9, 108, 237, 0.797);
-    --navigation-link-color: blue;
-    --navigation-hover-link-color: blank blue;
-    --navigation-hover-background-color:  blue; 
+    --paragraph-font: serif, Roboto;
+    --nav-background-color:rgba(9, 108, 237, 0.797);
+    --nav-link-color: blue;
+    --nav-hover-link-color: blank blue;
+    --nav-hover-background-color:  blue; 
 }
  div{
     padding: 20px;
@@ -20,7 +19,7 @@
 }
 
 body {
-    font-family: var(--default-font);
+    font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
 }
@@ -37,23 +36,23 @@ p{
 }
 
 nav{
-    background-color: var(--navigation-background-color);
+    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display:flex;
     
 }
 nav a{
     display: block;
-    color: var(--navigation-link-color);
+    color: var(--nav-link-color);
     text-decoration: none;
     padding:1rem;
     
 }
 nav a:link, nav a:visited{
-    color: var(--navigation-link-color);
+    color: var(--nav-link-color);
 }
 
 nav a:hover{
-    color: var(--navigation-hover-link-color);
-    background-color: var(--navigation-hover-background-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
