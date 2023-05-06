@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#05CCDA;
+    --secondary-color:#FFFFFF;
+    --accent1-color: aquamarine;
+    --accent2-color:blue;
+    --heading-font: Roboto;
+    --paragraph-font: serif, Roboto;
+    --nav-background-color:rgba(9, 108, 237, 0.797);
+    --nav-link-color: blue;
+    --nav-hover-link-color: rgb(0, 145, 255);
+    --nav-hover-background-color:  blue;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+header{
+    width: 960px;
+    height: 100px;
+    background-color: var(--secondary-color);
+}
+header img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    
+}
+ nav{
+    display:flex;
+    align-items: left;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 25%;
+    padding-right: 5%;
+    font-weight: bold; 
+}
+ul li{
+    display: inline-block;
+    padding: 5px 40px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--nav-background-color);
+    font-size: 1.5rem;
+    
+}
+nav a:link, nav a:visited{
+    color: var(--nav-link-color);
+}
+nav a:hover{
+    color: var(--nav-hover-link-color);
+    background-color: var(--accent1-color);
+}
+
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+
+}
+/* main{
+    background-color: #4705e1;
+} */
+
+/* img */
+.hero{
+    position: relative;
+   
+}
+.hero img{
+    width: 100%;
+    height: auto;
+
+}
+
+.hero h1{
+    position: absolute;
+    top: 30px;
+    left: 300px;
+    color: var(--paragraph-font);
+    background-color: var(--primary-color);
+}
+
+article{
+    
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+.parrafo{
+    position: absolute;  
+    top: -500px;
+    left: 40px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font: bold;
+    font-style: italic;
+    color: black;
+    font-family: var(--paragraph-font);  
+    background-color: rgba(128, 128, 128, 0.54); 
+    border-radius: 2%;
+}
+
+
+.imagen {
+    position: absolute;
+    top: -500px;
+    left: 500px;
+    border-radius: 2px;
+    float: right;
+}
+section{
+    padding: 50px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 50px;
+    background-color: rgba(128, 128, 128, 0.27);
+
+}
+
+section p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: var(--paragraph-font);
+    padding-top: 30px;
+}
+footer{
+    width: 400px;
+    height: auto;
+}
+
+footer p{
+    
+    
+    font: bold;
+}
+
+footer nav a {
+    display: flex;
+    width: 200px;
+    height: auto;
+}
+
+footer nav a img{
+    
+    
+    width: 50px;
+    height: auto;
+
+}
