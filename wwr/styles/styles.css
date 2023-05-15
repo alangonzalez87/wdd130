@@ -27,37 +27,42 @@ body {
 header{
     width: 960px;
     height: 100px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
     background-color: var(--secondary-color);
 }
 header img{
-    width: 150px;
-    height: auto;
-    position: absolute;
-    left: 50px;
-    top: 15px;
-    
-}
- nav{
-    display:flex;
-    align-items: left;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 25%;
-    padding-right: 5%;
-    font-weight: bold; 
-}
-ul li{
-    display: inline-block;
-    padding: 5px 40px;
+    margin: 0 0.25rem 0;
+	width: 150px;
+	height: auto;
     
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--nav-background-color);
-    font-size: 1.5rem;
+ nav{
     
+    text-align: right;
+   
 }
+.navigation{
+    display: flex;
+    list-style: none;
+}
+.navigation li{
+    flex: 1 1 100%;
+}
+
+.navigation a{
+    display: block;
+    font-size: 25px;
+    color:navy;
+    padding: 20px;
+    text-decoration: none;
+}
+
 nav a:link, nav a:visited{
     color: var(--nav-link-color);
 }
@@ -135,6 +140,29 @@ h2{
 
 }
 
+.container{
+    display: grid;
+    
+}
+.container img{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+    width: 100%;
+    margin: auto;
+    
+    
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+
 section p{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -142,26 +170,27 @@ section p{
     padding-top: 30px;
 }
 footer{
-    width: 400px;
+    display:flex;
+    width: 100%;
     height: auto;
+    background-color: aquamarine;
 }
 
 footer p{
-    
-    
     font: bold;
+    
 }
 
 footer nav a {
     display: flex;
-    width: 200px;
-    height: auto;
+    display:inline-block;
+    
+    
 }
 
 footer nav a img{
-    
-    
-    width: 50px;
+    justify-content: right;
+    width: 30px;
     height: auto;
 
 }
