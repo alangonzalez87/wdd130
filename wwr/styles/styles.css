@@ -84,14 +84,13 @@ h1, h2 {
 /* img */
 .hero{
     display: flex;
-    flex-direction: column;
-   
+    flex-direction: column;  
 }
-.hero img{
+/* .hero img{
     width: 100%;
     height: auto;
 
-}
+} */
 
 .hero h1{
     margin: 0 auto;
@@ -101,19 +100,26 @@ h1, h2 {
     background-color: var(--primary-color);
 }
 
-article{
-    display:flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 400px;
+.contact{
+    display:grid;
+    grid-template-columns:repeat(1, 1fr) ;
+    width: 100%;
     height: auto;
+    padding: 10px;
+    padding-bottom: 10px;
+   
 }
-.parrafo{
+aside{
     display: flex;
-    flex-direction: column; 
-    top: -500px;
-    left: 40px;
-    padding: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    
+}
+.contact h2{
+    display: flex;
+    align-items: start;
+    padding: 10px;
     font-size: 1.5rem;
     font: bold;
     font-style: italic;
@@ -121,6 +127,23 @@ article{
     font-family: var(--paragraph-font);  
     background-color: rgba(128, 128, 128, 0.54); 
     border-radius: 2%;
+    
+}
+.contact p{
+    display: flex;
+    justify-content: start;
+    font: bold;
+    font-style: italic;
+    background-color:rgba(128, 128, 128, 0.54);
+    padding: 15px;
+    
+    
+}
+iframe{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+   
 }
 
 
@@ -174,28 +197,23 @@ section p{
 }
 footer{
     display:flex;
-    width: 100%;
-    height: auto;
     background-color: aquamarine;
+    justify-content: space-between;
+    padding-top: 1px;
 }
 
 footer p{
     font: bold;
     
+    height: auto;
+    display:center;
 }
 
-footer nav a {
-    display: flex;
+footer a img{
     display:inline-block;
-    
-    
-}
-
-footer nav a img{
-    justify-content: right;
     width: 30px;
     height: auto;
-
+    
 }
 
 
@@ -257,4 +275,22 @@ select{
     border: none;
     border-radius: 3px;
 
+}
+
+.table{
+    box-sizing: border-box;
+    width: 100%;
+   
+}
+    
+td {
+   
+    border: 1px solid #4d0cda;
+}
+
+thead,
+tfoot {
+    
+    background-color: #830ceb;
+    color: #fff;
 }
