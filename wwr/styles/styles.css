@@ -106,8 +106,13 @@ article h2{
 .hero {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .hero h1 {
   margin: 0 auto;
   top: 30px;
@@ -115,6 +120,126 @@ article h2{
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
+
+.hero h2 {
+    
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    
+    /* Animación */
+    animation: colorChange 3s infinite;
+  }
+
+  .hero p{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    white-space: nowrap;
+  }
+
+  .trip-container {
+    position: absolute;
+    top: 95%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 10px;
+    animation: colorChange 3s infinite;
+  }
+  
+  .trip-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: colorChange 3s infinite;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .description p {
+    margin-bottom: 10px;
+  }
+  .offerings {
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .offerings ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+  }
+  .offerings h2 {
+    margin-bottom: 10px;
+  }
+  .custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .image1,
+  .image2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10px;
+  }
+  
+  .image1 img,
+  .image2 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .description,
+  .offerings {
+    grid-column: 1 / -1;
+  }
+  
+  .description h2,
+  .offerings h2 {
+    margin-bottom: 10px;
+  }
+  
+  
+ 
 
 .contact {
   display: grid;
@@ -246,16 +371,32 @@ footer p {
   height: auto;
 }
 
-form {
-  background-color: var(--accent1-color);
-  border-radius: 3px;
-  font-size: 1.2em;
-  color: #989898;
-  margin: 0 auto;
-  width: 400px;
-  padding: 40px;
-  margin-bottom: 50px;
-}
+.form {
+    background-color: var(--accent1-color);
+    border-radius: 3px;
+    font-size: 1.2em;
+    color: #989898;
+    margin: 0 auto;
+    width: 400px;
+    padding: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    color: #222;
+  }
+  
+  .checkbox {
+    margin-left: 5px;
+  }
 
 input,
 textarea {
@@ -269,6 +410,8 @@ textarea {
 
 .box {
   box-sizing: border-box;
+  font-style: bold;
+  color: #222;
 }
 
 .field {
@@ -306,19 +449,41 @@ select {
 
 table {
     width: 100%;
-    border-collapse: collapse; /* Para fusionar los bordes de las celdas */
+    border-collapse: collapse; 
   }
 
   th, td {
     border: 1px solid #4d0cda;
-    padding: 8px; /* Añade un espacio interno a las celdas */
-    text-align: left; /* Alinea el texto a la izquierda en las celdas */
+    padding: 8px; 
+    text-align: left; 
     width: 33%;
 }
 
   thead {
     background-color: var(--primary-color);
     color: #fff;
+  }
+
+
+
+
+
+
+
+
+  @keyframes colorChange {
+    0% {
+      color: #fff; /* Color inicial */
+    }
+    30% {
+      color: #b50505; /* Color intermedio */
+    }
+    60% {
+        color: #1105b5; /* Color intermedio */
+      }
+    100% {
+      color: #fff; /* Color final */
+    }
   }
 
 
